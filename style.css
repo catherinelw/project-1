@@ -118,12 +118,12 @@ h2, .desc {
     width: 20px;
 }
 
-.content__education,
+/* .content__education,
 .content__experience{
     display: flex;
     justify-content: space-around;
-    color: black;
-}.content__education--left
+    color: black; */
+/* }.content__education--left
 {
     width: 30%;
     font-size: 14px;
@@ -150,13 +150,13 @@ h2, .desc {
     line-height: 1.5;
     border-left: 1px solid lightgrey;
     margin-top: 30%;
-}
+} */
 
 /* 
 h3{
     color: black;
 } */
-.content__education--right--JR h3::before,
+/* .content__education--right--JR h3::before,
 .content__education--right--uni h3::before,
 .content__experience--right--JR h3::before,
 .content__experience--right--uni h3::before{
@@ -170,19 +170,19 @@ h3{
     background-color: white;
     opacity: 0.8;
     left: 40%;
-}
-.content__education--left{
+} */
+/* .content__education--left{
     top: 35%;
-}
- .content__title,
- #aboutMe  {
+} */
+ .content__title
+ {
     position: absolute;
     left: 8%;
     top: 5%;
     font-size: 30px;
     color: black;
 } 
-.content__list{
+.content__list--education{
     position: absolute;
     left: 6%;
     top: 20%;
@@ -223,10 +223,11 @@ h3{
     border-left: 1px solid lightgray;
 }
 
-.content__education--top .title__body,
+/* .content__education--top .title__body,
 .content__education--bottom .title__body,
 .content__experience--top .title__body,
-.content__experience--bottom .title__body{
+.content__experience--bottom */
+.title__body{ 
     width: 60%;
     position: absolute;
     right: 0;
@@ -234,6 +235,7 @@ h3{
     color: darkgray;
     padding-left: 20px;
     border-left: 1px solid lightgray;
+    margin-top: 50px;
 
 }
 .title::before{
@@ -259,68 +261,96 @@ h3{
 .content__list--experience{
     color: black;
     position: absolute;
-    top: 440px;
+    margin-top: 420px;
     left: 6%;
 }
 .content__experience--top{
     position: relative;
-    top: 320px;
+    top: 310px;
     width: 80%;
     height:300px;
 } 
 
 .content__experience--bottom {
     position: relative;
-    top: 400px;
+    top: 390px;
     width: 80%;
     height:300px;
-    padding-bottom: 20%;
+    margin-bottom: 50px;
+    border: 1px solid red;
 }
+.aboutMe__title{
+position: absolute;
+left: 8%;
+top: 5%;
+font-size: 30px;
+color: black;
+}
+
 
 .whatIdo__title{
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
-
-
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.skills{
+    margin: 30px 0;
+}
+.skills__title{
+    color: black;
+    margin-top: 10px;
+    font-size: 20px;
+}
 .skillsIcon{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 60%;
-
+    width: 100%;
 }
 .skillsIcon img{
-margin: 10px;
-height: 70px;
-width: 70px;
+margin: 15px;
+height: 75px;
+width: 75px;
 }
 
-.content p {
+.aboutMe p {
+    position: relative;
     color: rgb(90, 86, 86);
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    width: 80%;
-    margin-top: 15%;
+    width: 100%;
+    margin-top: 70px;
+    /* top: 70px; */
 }
-
 .whatIdo{
+    margin-top: 25px;
+}
+.whatIdo__container{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50%;
-}
-
-.whatIdo_block{
-    width: 40%;
-    height: 50%;
-    margin-left: 10%;
 
 }
-.whatIdo_icon{
-    width: 30px;
-    height: 30px
+.whatIdo__list h2{
+    margin: 15px 0;
+    color: black;
+    font-size: 18px;
 }
+.whatIdo__list{
+    width: 50%;
 
+}
+.whatIdo__icon{
+    width: 25px;
+    height: 25px
+}
+.whatIdo__list p{
+    font-size: 16px;
+    margin-top: 20px;
+}
